@@ -1,0 +1,49 @@
+.home {
+    margin-top: 40px;  
+    margin-left:40px;
+}
+
+.gold{
+    color: #c96;
+}
+
+.text{
+  color: white;
+}
+
+.home-image{
+  margin-top: 40px;
+}
+
+.bp{
+  height: 800px;
+}
+
+.bg-bp{
+	background: url(../../../assets/img/somos_back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color: #c96;
+    text-decoration: none !important;
+  }
+
+  li a:hover {
+  
+    color: white;
+  }

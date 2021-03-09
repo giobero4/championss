@@ -1,0 +1,21 @@
+.home {
+    margin-top: 80px;  
+    margin-left:40px;
+}
+
+.gold {
+color: #832008;  
+}
+
+.home-image{
+    margin-top: 40px;
+ }
+
+ .bp{
+    height: 800px;
+  }
+  .bg-bp{
+      background: url(../../../assets/img/editorial_back.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+     }

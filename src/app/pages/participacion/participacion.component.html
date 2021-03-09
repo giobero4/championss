@@ -1,0 +1,87 @@
+<div class="container-fluid second">
+  <div class="row second"> 
+    <div class="col-md-9 second">
+
+        <div class="nav-scroller bg-narrow shadow-sm">
+            <h1 class="bg-title">hola</h1>
+          </div>
+          <div class="blog-post">
+            <h6 class="blog-post-title p-first">Descripción </h6>
+          
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+    </div>
+ <div class="col-md-3 second">
+      <figure class="figure home-image">
+        <img  height="80%" width="80%" src="../../../assets/img/img_small_1.jpg" alt="...">
+      </figure>
+    </div>
+</div>
+
+<div class="row blog-post second"> 
+    <div class="col-md-8 second">
+    <div class="blog-post">
+     <p class="buton">
+     <a class="buton" (click)="first.toggle()" [attr.aria-expanded]="!isCollapsed"
+         aria-controls="collapseExample">
+       <img src="../../../assets/img/vineta.png" class="figure-img img-fluid rounded" alt="...">
+           Peleas realizadas en la primera fase
+      </a>
+       </p>
+     <div #first="ngbCollapse" [(ngbCollapse)]="isCollapsed"> 
+        <figure class="figure">
+        <img src="../../../assets/img/pelea1.png" class="figure-img img-fluid rounded" alt="...">
+         </figure> 
+         <figure class="figure disp">
+          <img src="../../../assets/img/pelea2.png" class="figure-img img-fluid rounded" alt="...">
+           </figure>  
+           </div>             
+            <p class="buton">
+                <a  class="buton" (click)="second.toggle()" [attr.aria-expanded]="!isSecond"
+                  aria-controls="collapseExample">
+                  <img src="../../../assets/img/vineta.png" class="figure-img img-fluid rounded" alt="...">
+                  Peleas realizadas en la primera fase
+            </a>
+              </p>
+              <div #second="ngbCollapse" [(ngbCollapse)]="isSecond">
+                <figure class="figure">
+                   <img src="../../../assets/img/pelea1.png" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+
+               <figure class="figure disp">
+                  <img src="../../../assets/img/pelea2.png" class="figure-img img-fluid rounded" alt="...">
+                     
+                </figure>  
+              </div>
+
+              <p class="buton">
+                <a  class="buton" (click)="third.toggle()" [attr.aria-expanded]="!isThird"
+                  aria-controls="collapseExample">
+                  <img src="../../../assets/img/vineta.png" class="figure-img img-fluid rounded" alt="...">
+                  Peleas realizadas en la primera fase
+            </a>
+              </p>
+              <div #third="ngbCollapse" [(ngbCollapse)]="isThird">
+              
+                      <figure class="figure">
+                        <img src="../../../assets/img/pelea1.png" class="figure-img img-fluid rounded" alt="...">
+                     
+                      </figure>
+
+                      <figure class="figure disp">
+                        <img src="../../../assets/img/pelea2.png" class="figure-img img-fluid rounded" alt="...">
+                     
+                      </figure>  
+              </div>
+        </div>
+    </div>
+    <div class="col-md-4 second">
+       <h3 class="subt">PARTICIPACIÓN DEL TORNEO</h3>
+    </div>
+</div>
+<hr>
+</div>

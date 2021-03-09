@@ -1,0 +1,28 @@
+.title-up {
+    margin-top: 40px !important;
+ }
+
+
+ .part-left {
+    margin-left:20px;
+ }
+
+ .back {
+    background-color: #F1F9F3;
+ }
+
+ .text-front {
+    color: #12307B;
+  
+ }
+
+ .home-image{
+   margin-left: 20px;
+   
+ }
+
+ .back{ position:absolute; z-index:0; } 
+
+ hr{
+    border: 0.5px solid red !important;
+     }  

@@ -1,0 +1,38 @@
+.title-play {
+   color: white;
+}
+div.jumbotron{
+    margin-bottom: 0;
+ }
+
+ .nav-top {
+    border-top: 1px;
+ }
+
+ .body {
+    background-color: #EFF1F6;
+ }
+
+ .text-front {
+    color: #12307B;
+ }
+
+ .orange {
+    color: orange;
+ }
+
+ 
+ ol.breadcrumb{
+   margin-bottom: 0;
+
+  }
+
+ .orange-btn{
+    background-color: orange;
+    border-radius: 25px;
+    border-color:  orange;
+ }
+
+ .nav-home nav-top {
+    margin-top: 1px !important;
+ }

@@ -1,0 +1,106 @@
+.title-play {
+    color: white;
+ }
+ div.jumbotron{
+     margin-bottom: 0;
+  }
+
+  .nav-top {
+    border-top: 1px;
+ }
+
+
+.first {
+    background-color: #F1F9F3;
+ }
+
+ .col-back {
+    background-color: whitesmoke;
+ }
+
+ .text-front {
+    color: #12307B;
+  
+ }
+ 
+ .text-two {
+    color: #BFD313;
+ }
+
+ .back {
+    background-color: #EE8030;
+    border-color: #EE8030;
+ }
+
+ .span-float {
+    float: right;
+    margin-right: 95px;
+ }
+
+ .nav-bar{
+    margin-left: 700px !important;
+    margin-top: 30px !important;
+ }
+
+ 
+ .orange {
+    color: #EE8030;
+    float: left;
+ }
+
+ .orange-btn{
+   background-color: #12307B;
+   border-color: #12307B;
+}
+
+
+ .back-grey {
+   border: 1px solid #F1F9F3;
+}
+
+.part-left {
+   margin-left:20px;
+}
+
+.part-left2 {
+   margin-left:750px;
+}
+
+.border-btn {
+
+   border: 1px solid #12307B !important;
+}
+
+ .champ {
+    margin-left: 180px;
+   
+ }
+ .title-up {
+    margin-top: 40px !important;
+    text-decoration: underline;
+    text-decoration-color: red;
+ }
+
+ .first-row {
+  margin-bottom: 40px;
+  margin-top: 40px;
+ }
+
+ .campeonatos {
+   
+   margin-top: 40px;
+  }
+
+ ol.breadcrumb{
+   margin-bottom: 0;
+
+  }
+
+  div.d-flex .justify-content-between .align-items-center .text-right{
+   padding-left: 200px !important;
+
+  }
+ 
+  .card-btn{
+   float: right !important;
+  }

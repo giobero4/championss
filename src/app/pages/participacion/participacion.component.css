@@ -1,0 +1,39 @@
+.bg-narrow{
+    background-color: #331B09 !important;
+     } 
+
+ .bg-title{
+  color: #331B09 !important;
+   } 
+ .p-first{
+    color: #12307B !important;
+    margin-top: 40px !important;
+    font-weight: bold;
+     } 
+   
+ .subt{
+    color: red;
+     } 
+
+ .second{
+        background-color: #E7E4E6;   
+        border: 1px solid #E7E4E6;
+    }    
+     
+   .buton{
+    color: #12307B;
+    font-weight: bold;
+     }
+
+    hr{
+        border: 1px solid red !important;
+    }  
+
+    .disp{
+       float: right !important;
+    }  
+         
+  .blog-post{
+      margin-top: 40px;
+     } 
+

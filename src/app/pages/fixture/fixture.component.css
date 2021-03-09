@@ -1,0 +1,27 @@
+div.jumbotron{
+    margin-bottom: 0;
+ }
+
+ .title-play{
+    color: white;
+ }
+
+ .nav-top{
+    background-color: white;
+ }
+ .breadcrumb {
+    background-color: white;
+    padding-left: 40px !important;
+}
+
+.bg-bp{
+   background: url(../../../assets/img/img_big_2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .bp{
+   height: 800px;
+ }
+
+    

@@ -1,0 +1,26 @@
+.home {
+    margin-top: 80px;  
+    margin-left:40px;
+}
+
+.home2 {
+    margin-top: 80px;  
+}
+
+.gold {
+color: white;  
+}
+
+.home-image{
+    margin-top: 50px;
+ }
+  
+  .bp{
+    height: 800px;
+  }
+  
+  .bg-bp{
+      background: url(../../../assets/img/historia_back.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
