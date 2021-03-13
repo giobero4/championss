@@ -11,8 +11,17 @@
   margin-top: 40px !important;  
 }
 
+.graytwo{
+  margin-top: 40px !important;  
+  margin-left: 20px !important;
+}
+
 .bar {
   float: right;  
+}
+
+.body{
+  margin-left: 20px !important;
 }
 
 .cont {
