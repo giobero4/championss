@@ -31,7 +31,11 @@
 
     .disp{
        float: right !important;
-    }  
+    } 
+    
+    .arrow{
+        margin-left: 240px !important;
+     }
          
   .blog-post{
       margin-top: 40px;

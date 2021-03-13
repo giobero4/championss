@@ -20,6 +20,10 @@
     color: #90B172 !important;
     margin-left:20px;
  } 
+
+ .element:hover {
+   background-color: gray;
+ }
                  
  .bg-narrow{
     background-color: #331B09 !important;

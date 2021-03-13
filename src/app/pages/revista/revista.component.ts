@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-revista',
@@ -9,9 +10,9 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 })
 export class RevistaComponent implements OnInit {
-  images = true;
-  constructor(config: NgbCarouselConfig) {
-    config.interval = 2000;
+  images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  constructor(config: NgbCarouselConfig,  public router: Router) {
+   // config.interval = 7000;
     config.keyboard = true;
     config.pauseOnHover = true;
 
@@ -20,4 +21,11 @@ export class RevistaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goFixture():void {
+   this.router.navigate(['/fixture']);
+  }
+
+  openInter():void {
+    this.router.navigate(['/entrevistas']);
+   }
 }

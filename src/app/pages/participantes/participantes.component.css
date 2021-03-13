@@ -71,13 +71,17 @@
  .bt {
    width: 80px !important;
 }
+.container-fluid {
+   padding-right: 0;
+   padding-left: 0;
+}
 
  .fst-row {
    margin-top: 40px;
   }
 
   .fluid {
-   background-color: #F1F9F3;
+   background-color: whitesmoke;
   }
 
 

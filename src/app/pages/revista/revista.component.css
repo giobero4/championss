@@ -15,10 +15,11 @@ div.jumbotron{
 
  .text-front {
     color: #12307B;
+    text-align: center;
  }
 
  .orange {
-    color: orange;
+    color: #F78928;
  }
 
  
@@ -28,11 +29,31 @@ div.jumbotron{
   }
 
  .orange-btn{
-    background-color: orange;
+    background-color: #F78928;
     border-radius: 25px;
-    border-color:  orange;
+    border-color:  #F78928;
  }
 
  .nav-home nav-top {
     margin-top: 1px !important;
  }
+
+ span.carousel-control-next-icon{
+   color:black !important;
+}
+
+a.carousel-control-next{
+   color:black !important;
+}
+
+.col-lf{
+   margin-left:260px !important;
+}
+
+ .home-image{
+   margin: 30px 10px 10px 60px;
+   align-items: center;
+   
+
+ }
+ 

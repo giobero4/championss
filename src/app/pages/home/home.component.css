@@ -7,6 +7,25 @@
     color: gray;  
 }
 
+.first {
+  margin-top: 40px !important;  
+}
+
+.bar {
+  float: right;  
+}
+
+.cont {
+  margin-left: 10px;  
+}
+
+
+.fluid{
+  margin-top: 40px !important;
+  margin-left:40px;
+}
+
+
 .home {
     margin-top: 40px;  
     margin-left:40px;
@@ -15,6 +34,7 @@
 .nav-home {
     margin-top: 40px;  
     background-color: white !important;
+    border-bottom: 0 !important;
 }
 
 .back-button{  
@@ -22,6 +42,7 @@
 }
 
 .graytwo {
+    margin-top: 20px !important;
     float: #585554;
 }
 
@@ -32,7 +53,9 @@
 .second {
   margin-left:40px;
 }
-
+h1.graytwo{
+  width: 940px;
+}
 
 .bg-narrow {
   margin-top:50px;
@@ -72,3 +95,5 @@
     background: #ddd;
     color: black;
   } 
+
+  

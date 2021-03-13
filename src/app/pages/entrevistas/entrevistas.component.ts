@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entrevistas',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./entrevistas.component.css']
 })
 export class EntrevistasComponent implements OnInit {
-
-  constructor() { }
+  show:boolean = false;
+  isShowing :boolean = false;
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
 
+  mouseenter() {
+  
+    this.show= true;
+  
+}
+
+  goDetail():void {
+    this.router.navigate(['/detalle']);
+   }
+
+   goVideo():void {
+    this.router.navigate(['/video']);
+   }
 }

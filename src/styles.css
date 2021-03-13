@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*.sidebar__open {
+    :host .sidebar {
+      right: 0 !important;
+    }
+  
+    .sidebar__overlay {
+      display: block !important;
+    }
+  }*/
+
+  
+  

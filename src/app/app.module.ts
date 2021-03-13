@@ -20,6 +20,8 @@ import { EntrevistaDetailComponent } from './pages/entrevista-detail/entrevista-
 import { EntrevistaVideoComponent } from './pages/entrevista-video/entrevista-video.component';
 import { ParticipacionComponent } from './pages/participacion/participacion.component';
 import { DetalleParticipacionComponent } from './pages/detalle-participacion/detalle-participacion.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { LogoBarComponent } from './shared/logo-bar/logo-bar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { DetalleParticipacionComponent } from './pages/detalle-participacion/det
     EntrevistaDetailComponent,
     EntrevistaVideoComponent,
     ParticipacionComponent,
-    DetalleParticipacionComponent
+    DetalleParticipacionComponent,
+    SidebarComponent,
+    LogoBarComponent
   ],
   imports: [
     BrowserModule,

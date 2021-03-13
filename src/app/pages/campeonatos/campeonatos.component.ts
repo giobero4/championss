@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-campeonatos',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CampeonatosComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goTour():void {
+    this.router.navigate(['/torneo']);
+   }
 }

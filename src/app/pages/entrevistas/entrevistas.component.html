@@ -2,6 +2,7 @@
     <div class="row">
       <div class="col-md-9 col-pad">
         <div class="first">
+          <app-logo-bar></app-logo-bar>
 
         </div>
 
@@ -12,7 +13,7 @@
             <div class="card-top">
             <p class="text-center align">Seleccione Año <img class="img-top"  height="" width="" src="../../../assets/img/arrow_bottom.png" alt="..."></p>  
             </div>
-            <div class="card-element">
+            <div class="card-element" (click)="goDetail()">
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative img-thumbnail element  ">
                 <div class="col-auto d-none d-lg-block">
                   <img  height="150px" width="120px" src="../../../assets/img/img_small_1.jpg" alt="...">
@@ -26,7 +27,7 @@
                </div>
           </div>
 
-          <div class="card-element">
+          <div class="card-element" (click)="goDetail()">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative img-thumbnail element  ">
               <div class="col-auto d-none d-lg-block">
                 <img  height="150px" width="120px" src="../../../assets/img/img_small_2.jpg" alt="...">
@@ -41,7 +42,7 @@
         
         </div>
 
-        <div class="card-element">
+        <div class="card-element" (click)="goDetail()">
             
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative img-thumbnail element  ">
             <div class="col-auto d-none d-lg-block">
@@ -57,7 +58,7 @@
       
       </div>
 
-      <div class="card-element">
+      <div class="card-element" (click)="goDetail()">
             
         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm h-md-250 position-relative img-thumbnail element  ">
           <div class="col-auto d-none d-lg-block">
