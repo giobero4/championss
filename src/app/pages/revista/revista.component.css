@@ -22,6 +22,17 @@ div.jumbotron{
     color: #F78928;
  }
 
+ .col-md-1 {
+   padding-right: 0;
+}
+.col-md-11 {
+   padding-right: 0;
+}
+
+ a.carousel-control-next{
+   color: gray !important;
+}
+
  
  ol.breadcrumb{
    margin-bottom: 0;

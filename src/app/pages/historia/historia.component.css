@@ -18,6 +18,11 @@ color: white;
   .bp{
     height: 800px;
   }
+
+  .col-md-1{
+    padding-right: 0;
+  }
+  
   
   .bg-bp{
       background: url(../../../assets/img/historia_back.png);

@@ -19,6 +19,15 @@
   height: 800px;
 }
 
+.first{
+  height: 790px;
+}
+
+.col-md-1{
+  padding-right: 0;
+}
+
+
 .bg-bp{
 	background: url(../../../assets/img/somos_back.png);
 	background-repeat: no-repeat;

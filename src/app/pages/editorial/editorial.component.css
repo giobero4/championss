@@ -14,6 +14,20 @@ color: #832008;
  .bp{
     height: 800px;
   }
+
+  
+ .col-md-1{
+    padding-right: 0;
+  }
+
+  .col-md-6{
+    height: 750px !important;
+  }
+
+ 
+  .col-md-1{
+    padding-right: 0;
+  } 
   .bg-bp{
       background: url(../../../assets/img/editorial_back.png);
       background-repeat: no-repeat;

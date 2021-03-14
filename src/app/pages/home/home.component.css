@@ -12,12 +12,20 @@
 }
 
 .graytwo{
-  margin-top: 40px !important;  
+  margin-top: 60px !important;  
   margin-left: 20px !important;
 }
 
 .bar {
   float: right;  
+}
+
+.col-md-2 {
+  padding-right: 0 !important;  
+}
+
+.cl1 {
+  height: 800px !important;  
 }
 
 .body{
