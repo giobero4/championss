@@ -19,21 +19,17 @@ export class LogoBarComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() { 
-    // TODO: ? Con esto aqui tiene todo el iframe Object
-    // ? y puedes modificarlo agregando o quitando
-    console.log('iframee'/*, this.iframe.nativeElement*/);
-    //this.isShowing = true;
-  
+
+    console.log('iframee');
   
   }
 
-  mouseenter() {
-  
+   mouseenter():void {
       this.isShowing = true;
     
   }
 
-  public close(): void {
+   close(): void {
     console.log('hola');
     this.isShowing = false;
 

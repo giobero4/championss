@@ -2,6 +2,25 @@
     float: right;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 .gray {
     color: gray;  
@@ -72,10 +91,6 @@
 }
 h1.graytwo{
   width: 940px;
-}
-
-.bg-narrow {
-  margin-top:50px;
 }
 
  

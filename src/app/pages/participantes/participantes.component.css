@@ -68,9 +68,24 @@
  }
 
  
- .bt {
+ .imgl {
+   margin-left:10px !important;
+}
+
+
+.imgr {
+   margin-left:15px !important;
+}
+
+.bt {
    width: 80px !important;
 }
+
+.first{
+   margin-left: 10px !important;
+}
+
+
 .container-fluid {
    padding-right: 0;
    padding-left: 0;

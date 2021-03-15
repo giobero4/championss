@@ -4,7 +4,11 @@
  .title1{
         color: white !important;
         margin-left:20px;
-     }            
+     }  
+     
+     .principal{
+      height: 752px;
+   }    
   .title2{
         color: #90B172 !important;
         margin-left:20px;
