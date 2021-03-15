@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./participantes.component.css']
 })
 export class ParticipantesComponent implements OnInit {
+  currentRate = 5;
 
   constructor(public router: Router) { }
 
