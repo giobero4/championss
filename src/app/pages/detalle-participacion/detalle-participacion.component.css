@@ -9,6 +9,9 @@
 
  .back {
     background-color: #F1F9F3;
+    top: 70px;
+   z-index:15;
+
  }
 
  .text-front {
@@ -17,7 +20,9 @@
  }
 
  .home-image{
+   position: absolute;
    margin-left: 20px;
+  
    
  }
 
