@@ -6,12 +6,10 @@ import { Component, OnInit,AfterViewInit ,Renderer2, ElementRef ,ViewChild} from
   styleUrls: ['./logo-bar.component.css']
 })
 export class LogoBarComponent implements OnInit, AfterViewInit {
-  isShowing :boolean = true;
-
-  //@ViewChild('iframe') iframe: ElementRef;
+  
+  @ViewChild('someInput') someInput: ElementRef;
 
   constructor( private rendered: Renderer2) { 
-   // this.iframe : 
   
   }
 
@@ -19,19 +17,23 @@ export class LogoBarComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() { 
-
-    console.log('iframee');
+  
+    this.open();
+    console.log('logo');
   
   }
 
-   mouseenter():void {
-      this.isShowing = true;
-    
+
+  open(): void {
+    setTimeout(()=>{ 
+      this.rendered.setStyle( this.someInput.nativeElement, 'left', 0);
+    }, 2000);
+   
   }
 
+
    close(): void {
-    console.log('hola');
-    this.isShowing = false;
+    this.rendered.removeStyle(this.someInput.nativeElement, 'left', 0);
 
   }
 
