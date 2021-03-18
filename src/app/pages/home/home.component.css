@@ -1,131 +1,86 @@
-.home-image {
-    float: right;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-}
 
 
-.gray {
-    color: gray;  
-}
+  /* views */
 
-.first {
-  margin-top: 40px !important;  
-}
-
-.graytwo{
-  margin-top: 60px !important;  
-  margin-left: 20px !important;
-}
-
-.bar {
-  float: right;  
-}
-
-.col-md-2 {
-  padding-right: 0 !important;  
-}
-
-.cl1 {
-  height: 800px !important;  
-}
-
-.body{
-  margin-left: 20px !important;
-}
-
-.cont {
-  margin-left: 10px;  
-}
-
-
-.fluid{
-  margin-top: 40px !important;
-  margin-left:40px;
-}
-
-
-.home {
-    margin-top: 40px;  
-    margin-left:40px;
-}
-
-.nav-home {
-    margin-top: 40px;  
-    background-color: white !important;
-    border-bottom: 0 !important;
-}
-
-.back-button{  
-  background-color: #CFCCCF !important;
-}
-
-.graytwo {
-    margin-top: 20px !important;
-    float: #585554;
-}
-
-.last {
-  margin-top:40px;
-}
-
-.second {
-  margin-left:40px;
-}
-h1.graytwo{
-  width: 940px;
-}
-
- 
- #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  .current-section {
+    background-color: cornflowerblue
   }
+  .current-section::after { 
+    content: "\039e";
+    background-color: yellow; 
+    color: red;
   
- 
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
   }
-  
+  /* Style sidebar  */ 
 
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  } 
+  p.nav{
+    color:white;
+    float: right !important;
+   
+     }
 
+   .grayOne{
+  margin-bottom: 0;
+   
+     }  
   
+  .gold{
+      
+      color:white;
+      list-style-type: none !important;
+      margin-right: 10px !important;
+    }
+  
+    .ul-nav{
+      margin-top: 20px !important;
+     
+       }
+   
+  .home-image{
+      margin-top: 5px;
+      margin-right: 5px;  
+      margin-bottom: 40px !important; 
+    } 
+   
+    
+  .ht{
+  
+      margin-right: 5px;   
+    } 
+  
+  
+    .side{
+       width: 110px;
+       height: 100%;
+       background-color: black;
+    
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       right: 0;
+       transition: 0.5s;
+       }   
+  
+   
+     ul.nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      background-color: black;
+    }
+    
+    li.nav2 a {
+      display: block;
+      color: #D7D7D7;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 14px !important;
+    }
+    
+  
+    li.nav2 a:hover {
+    
+      color: white;
+    }
+     

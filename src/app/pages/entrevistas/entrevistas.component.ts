@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit ,Renderer2, ElementRef ,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,19 @@ import { Router } from '@angular/router';
 export class EntrevistasComponent implements OnInit {
   show:boolean = false;
   isShowing :boolean = false;
-  constructor(public router: Router) { }
+  @ViewChild('bar') bar: ElementRef;
+  constructor(public router: Router, private rendered: Renderer2) { }
 
   ngOnInit(): void {
   }
 
+  
+  ngAfterViewInit() { 
+  
+    this.open();
+    console.log('logo');
+  
+  }
   mouseenter() {
   
     this.show= true;
@@ -24,7 +32,16 @@ export class EntrevistasComponent implements OnInit {
     this.router.navigate(['/detalle']);
    }
 
+   open(): void {
+    setTimeout(()=>{ 
+      this.rendered.setStyle( this.bar.nativeElement, 'right', 0);
+    }, 975);
+   
+  }
+
+
    goVideo():void {
     this.router.navigate(['/video']);
    }
+
 }

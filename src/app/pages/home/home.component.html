@@ -1,39 +1,48 @@
 
-
-<div class="container-fluid"> 
-  <video autoplay muted loop id="myVideo">
-  <source src="../../../assets/video/fondo_video.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>  
- 
-<div class="row"> 
-  <div class="col-md-10 cl1">
-<h1 class="graytwo">CAMPEÓN DE CAMPEONES</h1>
-<h5 class="graytwo">GALLOS - PERÚ</h5>
- <div class="body">
- 
-  <ul>
-    <li><a class="active" routerLink="/entrevistas">2016|</a></li>
-    <li><a routerLink="/entrevistas">2017|</a></li>
-    <li><a routerLink="/entrevistas" >2018|</a></li>
-    <li><a routerLink="/entrevistas">2019|</a></li>
-    <li><a routerLink="/entrevistas">2020</a></li>
-  </ul>
+   <app-inicio></app-inicio>
+   <div class="side" (mouseover)="toggleSidebar()" (mouseout)="toggleSidebar()" #sidebar>
+    <p class="nav"><a routerLink="/home"><img class="home-image" height="80%" width="80%" src="../../../assets/img/mini_log.jpg" alt=""></a></p>
+    
+    <div class="ul-nav"> 
+    <ul class="nav">
+        <li class="nav2"><a (click)="scrollTo('section1')" ><i class="fa fa-user"></i> <br />Quiénes Somos</a></li> 
+        <li class="nav2"><a (click)="scrollTo('section2')"  ><i class="fa fa-book"></i> <br />Editorial  </a></li>
+        <li class="nav2"><a (click)="scrollTo('section3')"  ><i class="fa fa-history"></i> <br />Historia</a></li>
+        <li class="nav2"><a (click)="scrollTo('section4')"  ><i class="fa fa-group"></i> <br />Participantes</a></li>
+        <li class="nav2"><a (click)="scrollTo('section5')" ><i class="fa fa-trophy"></i> <br />Campeonatos</a></li>
+        <li class="nav2"><a  (click)="scrollTo('section6')"  ><i class="fa fa-newspaper-o"></i> <br />Revista</a></li>
+      </ul>
+    </div>
+    
+    
+    </div>
 
 
-  <div class=""> 
-  <P class="gray">"Nuestra historia  resumida en </P>
-  <p class="gray">unos minutos"</p>
-</div>
-  <button type="button" class="btn btn-light back-button">Ver video</button>
-</div>
-</div>
-<div class="col-md-2">
-  <app-sidebar></app-sidebar> 
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" style="height:150px;">
+  <div id="section1">
+    <app-somos></app-somos>
+  </div>
+  <div id="section2">
+    <app-editorial></app-editorial>
+  </div>
+  <div id="section3">
+  
+    <app-historia></app-historia> 
+  </div>
+  <div id="section4">
+    <app-participantes></app-participantes>
+  </div>
+  <div id="section5">
+    <app-campeonatos></app-campeonatos> 
+  </div>
+  <div id="section6">
 
-</div>
+    <app-revista></app-revista> 
+  </div>
+  <div id="section6">
 
-</div>
+    <app-footer></app-footer> 
+  </div>
 </div>
 
 

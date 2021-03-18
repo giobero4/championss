@@ -3,10 +3,13 @@
  }
  div.jumbotron{
      margin-bottom: 0;
+     width: 1373px !important;
   }
 
   .nav-top {
     border-top: 1px;
+    width: 1373px !important;
+
  }
 
 
@@ -63,7 +66,7 @@
 }
 
 .part-left2 {
-   margin-left:650px;
+   margin-left:550px;
 }
 
 .border-btn {
@@ -72,7 +75,7 @@
 }
 
  .champ {
-    margin-left: 180px;
+    margin-left: 150px;
    
  }
  .title-up {

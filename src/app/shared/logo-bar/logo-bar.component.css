@@ -22,11 +22,11 @@
 
  .sidebar__body{
   position: fixed;
-   height: 695px;
+   height: 720px;
    width: 850px !important;
    top: 0;
    display: flex;
-  margin-top: 10px;
+ /* margin-top: 10px;*/
   margin-bottom: 10px !important;
   padding-bottom: 10px !important;
   display: flex;
@@ -34,7 +34,7 @@
   -webkit-box-direction: normal;
   flex-direction: column;
   left: -100%;
-   transition: left 1s ease;
+   transition: left 0.75s ease;
    z-index: 40000;
  }
 

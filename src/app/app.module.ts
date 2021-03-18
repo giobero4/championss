@@ -22,6 +22,8 @@ import { ParticipacionComponent } from './pages/participacion/participacion.comp
 import { DetalleParticipacionComponent } from './pages/detalle-participacion/detalle-participacion.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LogoBarComponent } from './shared/logo-bar/logo-bar.component';
+import { ScrollSpyDirective } from './scroll-spy.directive';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { LogoBarComponent } from './shared/logo-bar/logo-bar.component';
     ParticipacionComponent,
     DetalleParticipacionComponent,
     SidebarComponent,
-    LogoBarComponent
+    LogoBarComponent,
+    ScrollSpyDirective,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

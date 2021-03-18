@@ -20,14 +20,14 @@ import { DetalleParticipacionComponent } from './pages/detalle-participacion/det
 const routes: Routes = [
 
   {path:'home', component: HomeComponent},
-  {path:'campeonatos', component:  CampeonatosComponent},
-  {path:'editorial', component: EditorialComponent},
+ /* {path:'campeonatos', component:  CampeonatosComponent},*/
+ /* {path:'editorial', component: EditorialComponent},*/
   {path:'fixture', component: FixtureComponent},
-  {path:'historia', component: HistoriaComponent},
-  {path:'participantes', component:  ParticipantesComponent},
+ /* {path:'historia', component: HistoriaComponent},
+  {path:'participantes', component:  ParticipantesComponent},*/
   {path:'torneo', component: PublicidadComponent},
-  {path:'revista', component:  RevistaComponent},
-  {path:'somos', component:  SomosComponent},
+ /* {path:'revista', component:  RevistaComponent},
+  {path:'somos', component:  SomosComponent},*/
   {path:'entrevistas', component: EntrevistasComponent},
   {path:'detalle', component: EntrevistaDetailComponent},
   {path:'video', component: EntrevistaVideoComponent},

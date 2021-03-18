@@ -27,7 +27,7 @@ export class LogoBarComponent implements OnInit, AfterViewInit {
   open(): void {
     setTimeout(()=>{ 
       this.rendered.setStyle( this.someInput.nativeElement, 'left', 0);
-    }, 1000);
+    }, 975);
    
   }
 

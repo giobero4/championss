@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class RevistaComponent implements OnInit {
   images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
   constructor(config: NgbCarouselConfig,  public router: Router) {
-   // config.interval = 7000;
+    config.interval = 3000;
     config.keyboard = true;
     config.pauseOnHover = true;
 

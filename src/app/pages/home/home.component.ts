@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, AfterViewInit ,Renderer2, ElementRef ,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,13 +9,51 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  currentSection = 'section1';
+
+  @ViewChild('sidebar') sidebar: ElementRef;
+  public mbar :boolean = true
+  constructor(public router: Router,private rendered: Renderer2) { }
 
   ngOnInit(): void {
   }
+
+  ngAfterViewInit() { 
+    this.toggleSidebar();
+    console.log('logo');
+  }
+
+ 
+
+ public toggleSidebar() {
+  if (this.mbar) {
+  
+    console.log("open sidebar");
+    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 30);
+    this.mbar = false;
+
+  } else {
+    console.log("closing sidebar");
+    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 110);
+    this.mbar = true;
+  }
+
+
+}
+
+
 
 
   goInter():void {
     this.router.navigate(['/entrevistas']);
    }
+
+   onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
+  scrollTo(section:any):any  {
+    document.querySelector('#' + section).scrollIntoView();
+  }
+
 }
