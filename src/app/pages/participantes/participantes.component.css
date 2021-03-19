@@ -16,10 +16,20 @@
    margin-left: 40px;
 }
 
+/*.app-side {
+   background-color: whitesmoke;
+   /*height: 1304px !important;*/
+/*}*/
+
  .text-front {
     color: #12307B;
   
  }
+
+ .colm {
+   padding-right: 0;
+ 
+}
 
  nav {
    margin-left: 650px !important;

@@ -27,6 +27,13 @@
          margin-left:20px;
       }
 
+
+      .shadow-sm:hover {
+         -ms-transform: scale(1.1); 
+         -webkit-transform: scale(1.1); 
+         transform: scale(1.1); 
+       }   
+
   .card-btn{
          margin-left: 200px !important;
     }

@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   @ViewChild('sidebar') sidebar: ElementRef;
   public mbar :boolean = true
-  constructor(public router: Router,private rendered: Renderer2) { }
+  constructor(public router: Router,private rendered: Renderer2,) { }
 
   ngOnInit(): void {
   }
@@ -21,18 +21,18 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit() { 
     this.toggleSidebar();
     console.log('logo');
-    //this.mouseleave();
+    /*this.mouseleave();*/
   }
 
  
-  mouseenter() {
-    
+  mouseover() {
       this.bar = true;
-    
   }
 
+  
   mouseleave() {
     this.rendered.setStyle( this.sidebar.nativeElement, 'width', 30);
+    this.bar = false;
   }
 
  public toggleSidebar() {
