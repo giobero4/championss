@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  bar:boolean = true;
   currentSection = 'section1';
 
   @ViewChild('sidebar') sidebar: ElementRef;
@@ -21,9 +21,19 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit() { 
     this.toggleSidebar();
     console.log('logo');
+    //this.mouseleave();
   }
 
  
+  mouseenter() {
+    
+      this.bar = true;
+    
+  }
+
+  mouseleave() {
+    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 30);
+  }
 
  public toggleSidebar() {
   if (this.mbar) {
@@ -52,8 +62,13 @@ export class HomeComponent implements OnInit {
     this.currentSection = sectionId;
   }
 
-  scrollTo(section:any):any  {
-    document.querySelector('#' + section).scrollIntoView();
-  }
+  /*scrollTo(section:Element|null):any  {
+      document!.querySelector('#' + section).scrollIntoView();
+  
+  }*/
+
+  public onHome() {
+    this.router.navigate(['/home']);
+}
 
 }

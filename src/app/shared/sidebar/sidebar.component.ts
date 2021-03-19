@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit ,Renderer2, ElementRef ,ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,11 +10,14 @@ export class SidebarComponent implements OnInit {
 
   @ViewChild('sidebar') sidebar: ElementRef;
   public mbar :boolean = true
-  constructor(private rendered: Renderer2) { }
+  constructor(private rendered: Renderer2, private router:Router) { }
    
   ngOnInit(): void {
   }
 
+  public onHome() {
+    this.router.navigate(['/home']);
+}
 
   ngAfterViewInit() { 
     this.toggleSidebar();

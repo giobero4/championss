@@ -1,16 +1,31 @@
 
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <title>Bootstrap Example</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+     body {
+         position: relative; 
+     }
+     </style>
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+     
+
    <app-inicio></app-inicio>
-   <div class="side" (mouseover)="toggleSidebar()" (mouseout)="toggleSidebar()" #sidebar>
-    <p class="nav"><a routerLink="/home"><img class="home-image" height="80%" width="80%" src="../../../assets/img/mini_log.jpg" alt=""></a></p>
+   <div class="side"  (mouseleave)="mouseleave()" #sidebar *ngIf="bar">
+    <p class="nav"><a  ><img class="home-image" height="70%" width="90%" src="../../../assets/img/mini_log.jpg" alt="" (click)="onHome()"></a></p>
     
     <div class="ul-nav"> 
     <ul class="nav">
-        <li class="nav2"><a (click)="scrollTo('section1')" ><i class="fa fa-user"></i> <br />Quiénes Somos</a></li> 
-        <li class="nav2"><a (click)="scrollTo('section2')"  ><i class="fa fa-book"></i> <br />Editorial  </a></li>
-        <li class="nav2"><a (click)="scrollTo('section3')"  ><i class="fa fa-history"></i> <br />Historia</a></li>
-        <li class="nav2"><a (click)="scrollTo('section4')"  ><i class="fa fa-group"></i> <br />Participantes</a></li>
-        <li class="nav2"><a (click)="scrollTo('section5')" ><i class="fa fa-trophy"></i> <br />Campeonatos</a></li>
-        <li class="nav2"><a  (click)="scrollTo('section6')"  ><i class="fa fa-newspaper-o"></i> <br />Revista</a></li>
+        <li class="nav2"><a href="#somos" ><i class="fa fa-user"></i> <br />Quiénes Somos</a></li> 
+        <li class="nav2"><a href="#editorial"  ><i class="fa fa-book"></i> <br />Editorial  </a></li>
+        <li class="nav2"><a href="#historia"  ><i class="fa fa-history"></i> <br />Historia</a></li>
+        <li class="nav2"><a href="#participantes"  ><i class="fa fa-group"></i> <br />Participantes</a></li>
+        <li class="nav2"><a href="#campeonatos" ><i class="fa fa-trophy"></i> <br />Campeonatos</a></li>
+        <li class="nav2"><a  href="#revista"  ><i class="fa fa-newspaper-o"></i> <br />Revista</a></li>
       </ul>
     </div>
     
@@ -18,24 +33,24 @@
     </div>
 
 
-<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" style="height:150px;">
-  <div id="section1">
+<div  style="height:150px;">
+  <div id="somos">
     <app-somos></app-somos>
   </div>
-  <div id="section2">
+  <div id="editorial">
     <app-editorial></app-editorial>
   </div>
-  <div id="section3">
+  <div id="historia">
   
     <app-historia></app-historia> 
   </div>
-  <div id="section4">
+  <div id="participantes">
     <app-participantes></app-participantes>
   </div>
-  <div id="section5">
+  <div id="campeonatos">
     <app-campeonatos></app-campeonatos> 
   </div>
-  <div id="section6">
+  <div id="revista">
 
     <app-revista></app-revista> 
   </div>
@@ -45,4 +60,6 @@
   </div>
 </div>
 
+</body>
 
+ </html>

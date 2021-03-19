@@ -3,6 +3,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "strictPropertyInitialization": false,
+    "strictNullChecks":true,
     "outDir": "../out-tsc/e2e",
     "module": "commonjs",
     "target": "es2018",
