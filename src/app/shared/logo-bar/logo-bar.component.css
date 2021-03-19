@@ -22,7 +22,7 @@
 
  .sidebar__body{
   position: fixed;
-   height: 720px;
+   height: 800px;
    width: 850px !important;
    top: 0;
    display: flex;

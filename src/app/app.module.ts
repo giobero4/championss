@@ -24,6 +24,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LogoBarComponent } from './shared/logo-bar/logo-bar.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { SidedateComponent } from './shared/sidedate/sidedate.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     SidebarComponent,
     LogoBarComponent,
     ScrollSpyDirective,
-    InicioComponent
+    InicioComponent,
+    SidedateComponent
   ],
   imports: [
     BrowserModule,
