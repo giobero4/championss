@@ -11,15 +11,21 @@
  .back-grey {
     border: 1px solid whitesmoke;
  }
+ .card-back{
+  box-shadow: 3px 3px #B6B2B2;
+  border-radius: 10px;
+
+}
+
 
  .txt-left {
    margin-left: 40px;
 }
 
-/*.app-side {
+.app-side {
    background-color: whitesmoke;
-   /*height: 1304px !important;*/
-/*}*/
+   height: 805px !important;
+}
 
  .text-front {
     color: #12307B;
@@ -57,6 +63,12 @@
 
  .img-card {
    margin: 10px 10px 10px 10px;
+}
+
+.img1 {
+   margin-top: 5px;
+   margin-right: 5px;
+   margin-bottom: 5px;
 }
 
  .nav-bar{
