@@ -1,5 +1,11 @@
-
-import { Component, OnInit, AfterViewInit ,Renderer2, ElementRef ,ViewChild } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  Renderer2,
+  ElementRef,
+  ViewChild
+} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,57 +14,47 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  bar:boolean = true;
   currentSection = 'section1';
 
-  @ViewChild('sidebar') sidebar: ElementRef;
-  public mbar :boolean = true
-  constructor(public router: Router,private rendered: Renderer2,) { }
+  @ViewChild('sidebar')
+  sidebar!: ElementRef;
+  public mbar: boolean = true;
+  constructor(public router: Router, private rendered: Renderer2) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  ngAfterViewInit() { 
+  ngAfterViewInit() {
     this.toggleSidebar();
     console.log('logo');
     /*this.mouseleave();*/
   }
 
- 
   mouseover() {
-      this.bar = true;
-  }
-
-  
-  mouseleave() {
-    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 30);
-    this.bar = false;
-  }
-
- public toggleSidebar() {
-  if (this.mbar) {
-  
-    console.log("open sidebar");
-    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 30);
-    this.mbar = false;
-
-  } else {
-    console.log("closing sidebar");
-    this.rendered.setStyle( this.sidebar.nativeElement, 'width', 110);
     this.mbar = true;
   }
 
+  // mouseleave() {
+  //   this.rendered.setStyle(this.sidebar.nativeElement, 'width', 30);
+  //   this.bar = false;
+  // }
 
-}
+  public toggleSidebar() {
+    if (this.mbar) {
+      console.log('open sidebar');
+      //this.rendered.setStyle(this.sidebar.nativeElement, 'width', 30);
+      //this.mbar = false;
+    } else {
+      console.log('closing sidebar');
+      //this.rendered.setStyle(this.sidebar.nativeElement, 'width', 110);
+      //this.mbar = true;
+    }
+  }
 
-
-
-
-  goInter():void {
+  goInter(): void {
     this.router.navigate(['/entrevistas']);
-   }
+  }
 
-   onSectionChange(sectionId: string) {
+  onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
   }
 
@@ -66,9 +62,5 @@ export class HomeComponent implements OnInit {
       document!.querySelector('#' + section).scrollIntoView();
   
   }*/
-
-  public onHome() {
-    this.router.navigate(['/home']);
-}
 
 }

@@ -1,80 +1,56 @@
-p{
-  color:white;
-  float: right !important;
- 
-   }
+.sidebar-menu {
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -80px;
+  transition: all .5s ease;
+}
 
-.gold{
-    
-    color:white;
-    list-style-type: none !important;
-    margin-right: 10px !important;
-  }
+.sidebar-menu--open {
+  transition-delay: .5s;
+  width: 102px;
+  right: 0;
+}
 
-  .ul-nav{
-    margin-top: 20px !important;
-   
-     }
- 
-.home-image{
-    margin-top: 5px;
-    margin-right: 5px;  
-    margin-bottom: 40px !important; 
-  } 
- 
-  
-.ht{
+/* .home-image {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 40px !important;
+} */
 
-    margin-right: 5px;   
-  } 
+.sidebar-menu__container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+.sidebar-menu__item {
+  transform: scale(0);
+  transition: transform .5s ease;
+}
 
-  .side{
-     width: 110px;
-     height: 100%;
-     background-color: black;
-     opacity: 0.6;
-     /*float: right !important;*/
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     right: 0;
-     transition: 0.5s;
-     }   
+.sidebar-menu--open .sidebar-menu__item {
+  transition-delay: .9s;
+  transform: scale(1);
+}
 
-     /*.sidebar {
-      height: 100%;
-      width: 85px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      transition: 0.5s;
-      overflow-x: hidden;
-      padding-top: 60px;
-      white-space: nowrap;
-    } */ 
+.sidebar-menu__link {
+  display: block;
+  color: #d7d7d7;
+  padding: 12px 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
 
-   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-    background-color: black;
-  }
-  
-  li a {
-    display: block;
-    color: #D7D7D7;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 14px !important;
-  }
-  
+.sidebar-menu__link:hover {
+  color: #fff;
+}
 
-  li a:hover {
-  
-    color: white;
-  }
-   
+.sidebar-menu__link i {
+  font-size: 24px;
+  margin-bottom: 4px;
+}

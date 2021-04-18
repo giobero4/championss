@@ -50,14 +50,9 @@ import { SidedateComponent } from './shared/sidedate/sidedate.component';
     InicioComponent,
     SidedateComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-     FormsModule 
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   exports: [FooterComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,74 +1,51 @@
-
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <title>Bootstrap Example</title>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <style>
-     body {
-         position: relative; 
-     }
-     </style>
-   </head>
-   <body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--video width="800px" autoplay muted loop id="myVideo">
       <source src="../../../assets/video/fondo_video.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video-->
-
-   <div class="home bg-bp">
-  
-    <div class="cont">
-    <span class="icon"><i class="fa fa-align-justify" (mouseover)="mouseover()" ></i></span> 
-  
-   <app-inicio></app-inicio>
-   <div class="side"  (mouseleave)="mouseleave()" #sidebar *ngIf="bar">
-    <p class="nav"><a  ><img class="home-image" height="70%" width="90%" src="../../../assets/img/mini_log.jpg" alt="" (click)="onHome()"></a></p>
-    
-    <div class="ul-nav"> 
-    <ul class="nav">
-        <li class="nav2"><a href="#somos" ><i class="fa fa-user"></i> <br />Quiénes Somos</a></li> 
-        <li class="nav2"><a href="#editorial"  ><i class="fa fa-book"></i> <br />Editorial  </a></li>
-        <li class="nav2"><a href="#historia"  ><i class="fa fa-history"></i> <br />Historia</a></li>
-        <li class="nav2"><a href="#participantes"  ><i class="fa fa-group"></i> <br />Participantes</a></li>
-        <li class="nav2"><a href="#campeonatos" ><i class="fa fa-trophy"></i> <br />Campeonatos</a></li>
-        <li class="nav2"><a  href="#revista"  ><i class="fa fa-newspaper-o"></i> <br />Revista</a></li>
-      </ul>
+    <div class="home bg-bp">
+      <div class="cont">
+        <span class="icon">
+          <i class="fa fa-align-justify" (mouseover)="mouseover()"></i>
+        </span>
+        <app-inicio></app-inicio>
+        <app-sidebar></app-sidebar>
+      </div>
     </div>
+    <div style="height: 150px">
+      <div id="somos">
+        <app-somos></app-somos>
+      </div>
+      <div id="editorial">
+        <app-editorial></app-editorial>
+      </div>
+      <div id="historia">
+        <app-historia></app-historia>
+      </div>
+      <div id="participantes">
+        <app-participantes></app-participantes>
+      </div>
+      <div id="campeonatos">
+        <app-campeonatos></app-campeonatos>
+      </div>
+      <div id="revista">
+        <app-revista></app-revista>
+      </div>
+      <div id="section6">
+        <app-footer></app-footer>
+      </div>
     </div>
-  </div>
-
-
-  </div>
-
-<div  style="height:150px;">
-  <div id="somos">
-    <app-somos></app-somos>
-  </div>
-  <div id="editorial">
-    <app-editorial></app-editorial>
-  </div>
-  <div id="historia">
-  
-    <app-historia></app-historia> 
-  </div>
-  <div id="participantes">
-    <app-participantes></app-participantes>
-  </div>
-  <div id="campeonatos">
-    <app-campeonatos></app-campeonatos> 
-  </div>
-  <div id="revista">
-
-    <app-revista></app-revista> 
-  </div>
-  <div id="section6">
-
-    <app-footer></app-footer> 
-  </div>
-</div>
-
-</body>
-
- </html>
+  </body>
+</html>
