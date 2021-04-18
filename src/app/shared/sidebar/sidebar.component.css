@@ -5,14 +5,13 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  right: -80px;
-  transition: all .5s ease;
+  right: 0;
+  transition: width .5s ease;
 }
 
 .sidebar-menu--open {
   transition-delay: .5s;
   width: 102px;
-  right: 0;
 }
 
 /* .home-image {
