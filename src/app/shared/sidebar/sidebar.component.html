@@ -1,27 +1,43 @@
-<div class="sidebar-menu" #sideBarMenu>
+<div
+  [ngClass]="
+    showSideBarMenu ? 'sidebar-menu sidebar-menu--open' : 'sidebar-menu'
+  "
+>
   <ul class="sidebar-menu__container">
     <li class="sidebar-menu__item">
-      <a routerLink="/home" class="sidebar-menu__link">
+      <a
+        href="#home"
+        (click)="navigateToSection($event)"
+        class="sidebar-menu__link"
+      >
         <img
           class="home-image"
           src="../../../assets/img/mini_log.jpg"
-          alt=""
-          (click)="onHome()"
+          alt="Logo"
         />
       </a>
     </li>
     <li class="sidebar-menu__item">
-      <a routerLink="/somos" class="sidebar-menu__link"
+      <a
+        href="#somos"
+        (click)="navigateToSection($event)"
+        class="sidebar-menu__link"
         ><i class="fa fa-user"></i> <br />Quiénes Somos
       </a>
     </li>
     <li class="sidebar-menu__item">
-      <a routerLink="/editorial" class="sidebar-menu__link"
+      <a
+        href="#editorial"
+        (click)="navigateToSection($event)"
+        class="sidebar-menu__link"
         ><i class="fa fa-book"></i> <br />Editorial
       </a>
     </li>
     <li class="sidebar-menu__item">
-      <a routerLink="/historia" class="sidebar-menu__link"
+      <a
+        href="#historia"
+        (click)="navigateToSection($event)"
+        class="sidebar-menu__link"
         ><i class="fa fa-history"></i> <br />Historia
       </a>
     </li>
@@ -37,7 +53,8 @@
     </li>
     <li class="sidebar-menu__item">
       <a routerLink="/revista" class="sidebar-menu__link"
-        ><i class="fa fa-newspaper-o"></i> <br /> Revista
+        ><i class="fa fa-newspaper-o"></i> <br />
+        Revista
       </a>
     </li>
   </ul>

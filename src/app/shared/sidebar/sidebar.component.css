@@ -6,33 +6,37 @@
   z-index: 1;
   top: 0;
   right: 0;
-  transition: width .5s ease;
+  transition: width 0.5s ease;
 }
 
 .sidebar-menu--open {
-  transition-delay: .5s;
+  transition-delay: 0.5s;
   width: 102px;
 }
-
-/* .home-image {
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-bottom: 40px !important;
-} */
 
 .sidebar-menu__container {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: 60px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar-menu--open .sidebar-menu__container {
+  transition-delay: 0.8s;
+  top: 0;
+  opacity: 1;
 }
 
 .sidebar-menu__item {
   transform: scale(0);
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .sidebar-menu--open .sidebar-menu__item {
-  transition-delay: .9s;
+  transition-delay: 0.8s;
   transform: scale(1);
 }
 
@@ -43,6 +47,7 @@
   text-decoration: none;
   text-align: center;
   font-size: 12px;
+  transition: color .3s ease;
 }
 
 .sidebar-menu__link:hover {
