@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,9 +6,11 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   public mbar = true;
   constructor(public router: Router) {}
+
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     this.toggleSidebar();
