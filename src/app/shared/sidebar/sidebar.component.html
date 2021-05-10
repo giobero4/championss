@@ -1,57 +1,59 @@
-<div class="sidebar-menu" #sideBarMenu>
-  <ul class="sidebar-menu__container">
-    <li class="sidebar-menu__item">
-      <a
-        href="#home"
-        (click)="navigateToSection($event)"
-        class="sidebar-menu__link"
-      >
-        <img
-          class="home-image"
-          src="../../../assets/img/mini_log.jpg"
-          alt="Logo"
-        />
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a
-        href="#somos"
-        (click)="navigateToSection($event)"
-        class="sidebar-menu__link"
-        ><i class="fa fa-user"></i> <br />Quiénes Somos
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a
-        href="#editorial"
-        (click)="navigateToSection($event)"
-        class="sidebar-menu__link"
-        ><i class="fa fa-book"></i> <br />Editorial
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a
-        href="#historia"
-        (click)="navigateToSection($event)"
-        class="sidebar-menu__link"
-        ><i class="fa fa-history"></i> <br />Historia
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a routerLink="/participantes" class="sidebar-menu__link"
-        ><i class="fa fa-group"></i> <br />Participantes
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a routerLink="/campeonatos" class="sidebar-menu__link"
-        ><i class="fa fa-trophy"></i> <br />Campeonatos
-      </a>
-    </li>
-    <li class="sidebar-menu__item">
-      <a routerLink="/revista" class="sidebar-menu__link"
-        ><i class="fa fa-newspaper-o"></i> <br />
-        Revista
-      </a>
-    </li>
-  </ul>
-</div>
+<nav class="main-menu" (mouseover)="showMenuSideBar()" (mouseout)="hideMenuSideBar()">
+  <div class="sidebar-menu" #sideBarMenu>
+    <ul class="sidebar-menu__container">
+      <li class="sidebar-menu__item">
+        <a
+          href="#home"
+          (click)="navigateToSection($event)"
+          class="sidebar-menu__link"
+        >
+          <img
+            class="home-image"
+            src="../../../assets/img/mini_log.jpg"
+            alt="Logo"
+          />
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a
+          href="#somos"
+          (click)="navigateToSection($event)"
+          class="sidebar-menu__link"
+          ><i class="fa fa-user"></i> <br />Quiénes Somos
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a
+          href="#editorial"
+          (click)="navigateToSection($event)"
+          class="sidebar-menu__link"
+          ><i class="fa fa-book"></i> <br />Editorial
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a
+          href="#historia"
+          (click)="navigateToSection($event)"
+          class="sidebar-menu__link"
+          ><i class="fa fa-history"></i> <br />Historia
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a routerLink="/participantes" class="sidebar-menu__link"
+          ><i class="fa fa-group"></i> <br />Participantes
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a routerLink="/campeonatos" class="sidebar-menu__link"
+          ><i class="fa fa-trophy"></i> <br />Campeonatos
+        </a>
+      </li>
+      <li class="sidebar-menu__item">
+        <a routerLink="/revista" class="sidebar-menu__link"
+          ><i class="fa fa-newspaper-o"></i> <br />
+          Revista
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

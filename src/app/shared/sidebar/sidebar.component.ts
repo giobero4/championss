@@ -19,18 +19,32 @@ export class SidebarComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.showSideBar();
-  }
-
-  public showSideBar(): void {
     const $this = this;
     setTimeout(() => {
-      $this.sideBarMenu.nativeElement.classList.add('sidebar-menu--open');
-    }, 200);
+      $this.showMenuSideBar();
+    }, 1000);
+    this.hideSideBarOnScroll();
+  }
+
+  public hideSideBarOnScroll(): void {
+    window.addEventListener('scroll', () => {
+      this.hideMenuSideBar();
+    });
+  }
+
+  showMenuSideBar(): void {
+    this.sideBarMenu.nativeElement.classList.add('sidebar-menu--open');
+  }
+
+  hideMenuSideBar(): void {
+    if (window.scrollY > 120)
+      this.sideBarMenu.nativeElement.classList.remove('sidebar-menu--open');
+    else this.showMenuSideBar();
   }
 
   public navigateToSection(event: any): void {
     event.preventDefault();
+    this.showMenuSideBar();
     const sectionNameToNavigate = event.currentTarget;
     document
       .getElementById(
